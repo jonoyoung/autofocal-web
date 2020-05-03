@@ -23,37 +23,91 @@
     </head>
 
     <body>
-        <!-- Navbar content -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="./"><img id="logo" src="./images/logo_light.svg" alt="autofocal logo" draggable="false" /></a>
-            
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list" aria-controls="navbar-list" aria-expanded="false" aria-label="Toggle navigation">
-                    <span style="color: black;" class="fas fa-bars"></span>
-                </button>
+        <!-- Wave header -->
+        <div class="wave-container">
+            <!-- Navbar content -->
+            <nav class="navbar navbar-expand-md">
+                <div class="container">
+                    <a class="navbar-brand" href="./"><img id="logo" src="./images/logo_dark.svg" alt="autofocal logo" draggable="false" /></a>
 
-                <div id="navbar-list" class="collapse navbar-collapse">
-                    <ul>
-                        <li><a href="./">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars" style="color: white;"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id="navbar-list" class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <div class="row">
+                    <div id="header-text" class="col-md-8 scene-element scene-element-fadeindown">
+                        <h1>Find beautiful automotive photography locations</h1>
+                        <p>The best app for finding automotive inspired photography locations worldwide. You can download the app from the App Store. (Android coming soon).</p>
+    
+                        <a href="#">
+                            <img style="margin-top: 10px;" src="./images/app_store.svg" alt="Get on app store" />
+                        </a>
+                    </div>
+    
+                    <div class="col-md-4 text-center">
+                        <img class="mockup-image scene-element scene-element-fadeinup" src="./images/iphone_mapview.png" alt="iPhone Map View" />
+                    </div>
                 </div>
             </div>
-        </nav>
-        
-        <div class="container">
-            <h1>Under construction... <i class="fas fa-spinner fa-spin"></i></h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="2880" height="640" viewBox="0 0 1440 320">
+                <path fill="#0A0F33" fill-opacity="1" d="M0,256L40,245.3C80,235,160,213,240,208C320,203,400,213,480,224C560,235,640,245,720,240C800,235,880,213,960,186.7C1040,160,1120,128,1200,112C1280,96,1360,96,1400,96L1440,96L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+            </svg>
         </div>
+
+        <!-- Main content -->
+        <main id="main">
+            <div id="features" class="container scene-element scene-element-fadein">
+                <h2>Features</h2>
+				<p>
+					Looking to step up your automotive photography? Well <b>autofocal</b> gives you access to the best locations that will take your photos to the next level! Here are some of the features on offer to you.
+				</p>
+            </div>
+
+            <div class="container">
+                <p>More content coming in the future... <i class="fas fa-spinner fa-spin"></i></p>
+            </div>
+        </main>
+
+        <br /><br />
 
         <!-- Footer content -->
         <footer>
             <div id="contact" class="container scene-element scene-element-fadein">
                 <h2>Contact</h2>
                 
-                <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> - autofocal</p>
-                <a href="./privacy">Privacy Policy</a>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="mailto:contact@autofocal.app">contact@autofocal.app</a>
+                    </div>
 
+                    <div class="col-sm-6">
+                        <a href="./privacy">Privacy Policy</a>                      
+                    </div>
+                </div>
+
+                <br/>
+
+                <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> - autofocal</p>
                 <p>Made with ☕️ by <a href="https://jyoung.co">Jono Young</a></p>
             </div>
         </footer>
